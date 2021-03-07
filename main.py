@@ -27,18 +27,5 @@ async def on_ready():
             a = 0
         await asyncio.sleep(5)
 
-@client.event
-async def on_message(message):
-    if message.content.startswith("안녕"):
-        await message.channel.send("반가워")
-        a = 0
-    if message.content.startswith("강하지"):
-        await message.channel.send("골딱이")
-        a = 0
-    if message.content.startswith("개새끼"):
-        await message.channel.send("멍멍")
-        a = 0
-
-
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
